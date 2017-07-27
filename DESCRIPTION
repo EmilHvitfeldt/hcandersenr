@@ -8,8 +8,7 @@ Description: Texts for H.C. Andersens fairy tales, ready for text
 URL: https://github.com/EmilHvitfeldt/hcandersenr
 Depends:
     R (>= 3.0.0)
-Imports:
-    dplyr (>= 0.5.0)
+Suggests: dplyr, magrittr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

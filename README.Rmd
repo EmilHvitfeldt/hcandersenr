@@ -19,7 +19,9 @@ There is also a function `hca_fairytales()` that returns a tidy data frame of fa
 
 ## Avaliable fairytales
 
-```{r, fig.height=18, fig.width=7}g
+```{r, fig.height=18, fig.width=7}
+library(hcandersenr)
+library(tidyverse)
 hca_fairytales() %>% 
   select(book, language) %>% 
   unique() %>% 
