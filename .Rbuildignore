@@ -7,3 +7,4 @@
 ^hca\.Rmd$          # A file with creating of data
 ^indexing_new\.csv$ # dataset of indexes
 ^indexing_new\.omw$ # jamovifile of indexes
+^\.travis\.yml$

@@ -12,6 +12,8 @@
 #' @name hca_fairytales
 #'
 #' @examples
+#' library(tidyverse)
+#' library(hcandersenr)
 #'
 #' hca_fairytales() %>%
 #'   group_by(language) %>%
@@ -21,37 +23,37 @@
 hca_fairytales <- function(){
   rbind(
     hcandersenr::hcandersen_da %>%
-      mutate(language = "Danish") %>%
-      left_join(
-        hcandersenr::EK %>% select(name_da, name_en),
+      dplyr::mutate(language = "Danish") %>%
+      dplyr::left_join(
+        hcandersenr::EK %>% dplyr::select(name_da, name_en),
         by = c("book" = "name_da")
       ) %>%
-      mutate(book = name_en) %>%
-      select(-name_en),
+      dplyr::mutate(book = name_en) %>%
+      dplyr::select(-name_en),
     hcandersenr::hcandersen_de %>%
-      mutate(language = "German") %>%
-      left_join(
-        hcandersenr::EK %>% select(name_de, name_en),
+      dplyr::mutate(language = "German") %>%
+      dplyr::left_join(
+        hcandersenr::EK %>% dplyr::select(name_de, name_en),
         by = c("book" = "name_de")
       ) %>%
-      mutate(book = name_en) %>%
-      select(-name_en),
-    hcandersenr::hcandersen_en %>% mutate(language = "English"),
+      dplyr::mutate(book = name_en) %>%
+      dplyr::select(-name_en),
+    hcandersenr::hcandersen_en %>% dplyr::mutate(language = "English"),
     hcandersenr::hcandersen_es %>%
-      mutate(language = "Spanish") %>%
-      left_join(
-        hcandersenr::EK %>% select(name_es, name_en),
+      dplyr::mutate(language = "Spanish") %>%
+      dplyr::left_join(
+        hcandersenr::EK %>% dplyr::select(name_es, name_en),
         by = c("book" = "name_es")
       ) %>%
-      mutate(book = name_en) %>%
-      select(-name_en),
+      dplyr::mutate(book = name_en) %>%
+      dplyr::select(-name_en),
     hcandersenr::hcandersen_fr %>%
-      mutate(language = "French") %>%
-      left_join(
-        hcandersenr::EK %>% select(name_fr, name_en),
+      dplyr::mutate(language = "French") %>%
+      dplyr::left_join(
+        hcandersenr::EK %>% dplyr::select(name_fr, name_en),
         by = c("book" = "name_fr")
       ) %>%
-      mutate(book = name_en) %>%
-      select(-name_en)
+      dplyr::mutate(book = name_en) %>%
+      dplyr::select(-name_en)
   )
 }
