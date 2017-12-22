@@ -30,16 +30,16 @@ hca_fairytales <- function(){
         hcandersenr::EK %>% dplyr::select("name_da", "name_en"),
         by = c("book" = "name_da")
       ) %>%
-      dplyr::mutate(book = name_en) %>%
-      dplyr::select(-name_en),
+      dplyr::mutate(book = ~name_en) %>%
+      dplyr::select(-~name_en),
     hcandersenr::hcandersen_de %>%
       dplyr::mutate(language = "German") %>%
       dplyr::left_join(
         hcandersenr::EK %>% dplyr::select("name_de", "name_en"),
         by = c("book" = "name_de")
       ) %>%
-      dplyr::mutate(book = name_en) %>%
-      dplyr::select(-name_en),
+      dplyr::mutate(book = ~name_en) %>%
+      dplyr::select(-~name_en),
     hcandersenr::hcandersen_en %>% dplyr::mutate(language = "English"),
     hcandersenr::hcandersen_es %>%
       dplyr::mutate(language = "Spanish") %>%
@@ -47,15 +47,15 @@ hca_fairytales <- function(){
         hcandersenr::EK %>% dplyr::select("name_es", "name_en"),
         by = c("book" = "name_es")
       ) %>%
-      dplyr::mutate(book = name_en) %>%
-      dplyr::select(-name_en),
+      dplyr::mutate(book = ~name_en) %>%
+      dplyr::select(-~name_en),
     hcandersenr::hcandersen_fr %>%
       dplyr::mutate(language = "French") %>%
       dplyr::left_join(
         hcandersenr::EK %>% dplyr::select("name_fr", "name_en"),
         by = c("book" = "name_fr")
       ) %>%
-      dplyr::mutate(book = name_en) %>%
-      dplyr::select(-name_en)
+      dplyr::mutate(book = ~name_en) %>%
+      dplyr::select(-~name_en)
   )
 }

@@ -8,3 +8,7 @@
 ^indexing_new\.csv$ # dataset of indexes
 ^indexing_new\.omw$ # jamovifile of indexes
 ^\.travis\.yml$
+README.Rmd
+hca.Rmd
+indexing_new.csv
+^LICENSE\.md$

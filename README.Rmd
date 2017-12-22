@@ -4,6 +4,14 @@ output: github_document
 
 # hcandersenr
 
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-"
+)
+```
+
 [![Travis build status](https://travis-ci.org/EmilHvitfeldt/hcandersenr.svg?branch=master)](https://travis-ci.org/EmilHvitfeldt/hcandersenr)
 
 ## An R Package for H.C. Andersens fairy tales

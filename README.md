@@ -2,6 +2,8 @@
 hcandersenr
 ===========
 
+[![Travis build status](https://travis-ci.org/EmilHvitfeldt/hcandersenr.svg?branch=master)](https://travis-ci.org/EmilHvitfeldt/hcandersenr)
+
 An R Package for H.C. Andersens fairy tales
 -------------------------------------------
 
@@ -30,7 +32,7 @@ hca_fairytales() %>%
   scale_x_discrete(position = "top")
 ```
 
-![](README_files/figure-markdown_github-ascii_identifiers/unnamed-chunk-1-1.png)
+![](man/figures/README-unnamed-chunk-2-1.png)
 
 Installation
 ------------
