@@ -18,11 +18,13 @@ fairy tales divided into elements of up to about 80 characters each,
 \code{language} which is the language of the \code{text}.
 }
 \examples{
+\dontrun{
 library(tidyverse)
 library(hcandersenr)
 
 hca_fairytales() \%>\%
   group_by(language) \%>\%
   summarise(n_lines = n())
+}
 
 }

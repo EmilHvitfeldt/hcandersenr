@@ -12,12 +12,14 @@
 #' @name hca_fairytales
 #'
 #' @examples
+#' \dontrun{
 #' library(tidyverse)
 #' library(hcandersenr)
 #'
 #' hca_fairytales() %>%
 #'   group_by(language) %>%
 #'   summarise(n_lines = n())
+#' }
 #'
 #' @export
 hca_fairytales <- function(){
