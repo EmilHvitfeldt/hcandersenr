@@ -3,3 +3,4 @@
 export("%>%")
 export(hca_fairytales)
 importFrom(magrittr,"%>%")
+importFrom(rlang,".data")

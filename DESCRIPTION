@@ -1,7 +1,7 @@
 Package: hcandersenr
 Type: Package
 Title: H.C. Andersens Fairy Tales
-Version: 0.1.01
+Version: 0.1.02
 Authors@R: person("Emil", "Hvitfeldt", email = "emilhhvitfeldt@gmail.com", role = c("aut", "cre"))
 Description: Texts for H.C. Andersens fairy tales, ready for text
     analysis. Fairy tales in German, Danish, English, Spanish and French.
@@ -14,4 +14,5 @@ LazyData: true
 RoxygenNote: 6.0.1
 Imports:
     magrittr,
-    dplyr
+    dplyr,
+    rlang
