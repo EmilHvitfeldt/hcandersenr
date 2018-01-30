@@ -80,3 +80,15 @@ NULL
 #' \item{\code{name_fr}}{Name of the fairy tale in French}
 #' }
 "EK"
+
+#' Tidy data frame of all of H.C. Andersens fairy tales in this pacakage
+#'
+#' A tidy data frame of all of H.C. Andersens fairy tales in this
+#' pacakage with three columns: \code{text}, which contains the text of the
+#' fairy tales divided into elements of up to about 80 characters each,
+#' \code{book}, which contains the titles of the fairy tales in english, and
+#' \code{language} which is the language of the \code{text}.
+#'
+#' @format A data frame with three variables: \code{text},
+#' \code{book} and \code{language}.
+"hca_fairytales"

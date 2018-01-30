@@ -15,8 +15,7 @@ This package contains (most) the complete texts of 157 fairy tales of H.C. Ander
 -   `hcandersen_es`: 157 out of the 157 Fairy tales in Danish
 -   `hcandersen_fr`: 61 out of the 157 Fairy tales in Danish
 -   `EK`: dataframe with ID, names and publishing dates
-
-There is also a function `hca_fairytales()` that returns a tidy data frame of fairy tales in the package.
+-   `hca_fairytales`: Complete collection of all fairytales in this package
 
 Avaliable fairytales
 --------------------
@@ -24,7 +23,7 @@ Avaliable fairytales
 ``` r
 library(hcandersenr)
 library(tidyverse)
-hca_fairytales() %>% 
+hca_fairytales %>% 
   select(book, language) %>% 
   unique() %>% 
   ggplot(aes(language, book)) + 
