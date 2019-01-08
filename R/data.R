@@ -91,4 +91,23 @@ NULL
 #'
 #' @format A data frame with three variables: \code{text},
 #' \code{book} and \code{language}.
-"hca_fairytales"
+#' @export
+hca_fairytales <- function() {
+  length_da <- NROW(hcandersenr::hcandersen_da)
+  length_de <- NROW(hcandersenr::hcandersen_de)
+  length_en <- NROW(hcandersenr::hcandersen_en)
+  length_es <- NROW(hcandersenr::hcandersen_es)
+  length_fr <- NROW(hcandersenr::hcandersen_fr)
+  
+  out <- rbind(
+    hcandersenr::hcandersen_da,
+    hcandersenr::hcandersen_de,
+    hcandersenr::hcandersen_en,
+    hcandersenr::hcandersen_es,
+    hcandersenr::hcandersen_fr
+  )
+  
+  out$language <- rep(c("Danish", "German", "English", "Spanish", "French"),
+                      times = c(length_da, length_de, length_en, length_es, length_fr))
+  out
+}
