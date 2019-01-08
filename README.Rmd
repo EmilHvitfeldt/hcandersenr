@@ -2,12 +2,13 @@
 output: github_document
 ---
 
-# hcandersenr
+# hcandersenr <img src='man/figures/logo.png' align="right" height="139" />
 
 ```{r, echo = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
+  dpi = 200,
   fig.path = "man/figures/README-"
 )
 ```
