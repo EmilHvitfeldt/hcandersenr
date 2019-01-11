@@ -10,7 +10,7 @@ An R Package for H.C. Andersens fairy tales
 
 This package contains (most) the complete texts of 157 fairy tales of H.C. Andersen, in a number of different languages. formatted to be convenient for text analysis. Where each text is formatted to elements of about 80 characters. The package contains:
 
--   `hcandersen_da`: 139 out of the 157 Fairy tales in Danish
+-   `hcandersen_da`: 138 out of the 157 Fairy tales in Danish
 -   `hcandersen_de`: 156 out of the 157 Fairy tales in German
 -   `hcandersen_en`: 157 out of the 157 Fairy tales in English
 -   `hcandersen_es`: 157 out of the 157 Fairy tales in Spanish
