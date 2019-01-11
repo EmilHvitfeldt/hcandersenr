@@ -80,34 +80,3 @@ NULL
 #' \item{\code{name_fr}}{Name of the fairy tale in French}
 #' }
 "EK"
-
-#' Tidy data frame of all of H.C. Andersens fairy tales in this pacakage
-#'
-#' A tidy data frame of all of H.C. Andersens fairy tales in this
-#' pacakage with three columns: \code{text}, which contains the text of the
-#' fairy tales divided into elements of up to about 80 characters each,
-#' \code{book}, which contains the titles of the fairy tales in english, and
-#' \code{language} which is the language of the \code{text}.
-#'
-#' @format A data frame with three variables: \code{text},
-#' \code{book} and \code{language}.
-#' @export
-hca_fairytales <- function() {
-  length_da <- NROW(hcandersenr::hcandersen_da)
-  length_de <- NROW(hcandersenr::hcandersen_de)
-  length_en <- NROW(hcandersenr::hcandersen_en)
-  length_es <- NROW(hcandersenr::hcandersen_es)
-  length_fr <- NROW(hcandersenr::hcandersen_fr)
-  
-  out <- rbind(
-    hcandersenr::hcandersen_da,
-    hcandersenr::hcandersen_de,
-    hcandersenr::hcandersen_en,
-    hcandersenr::hcandersen_es,
-    hcandersenr::hcandersen_fr
-  )
-  
-  out$language <- rep(c("Danish", "German", "English", "Spanish", "French"),
-                      times = c(length_da, length_de, length_en, length_es, length_fr))
-  out
-}

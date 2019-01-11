@@ -2,7 +2,8 @@
 hcandersenr <img src='man/figures/logo.png' align="right" height="139" />
 =========================================================================
 
-[![Travis build status](https://travis-ci.org/EmilHvitfeldt/hcandersenr.svg?branch=master)](https://travis-ci.org/EmilHvitfeldt/hcandersenr)
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/EmilHvitfeldt/hcandersenr.svg?branch=master)](https://travis-ci.org/EmilHvitfeldt/hcandersenr) [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/EmilHvitfeldt/hcandersenr?branch=master&svg=true)](https://ci.appveyor.com/project/EmilHvitfeldt/hcandersenr) <!-- badges: end -->
 
 An R Package for H.C. Andersens fairy tales
 -------------------------------------------
@@ -23,7 +24,7 @@ Avaliable fairytales
 ``` r
 library(hcandersenr)
 library(tidyverse)
-hca_fairytales %>% 
+hca_fairytales() %>% 
   select(book, language) %>% 
   unique() %>% 
   ggplot(aes(language, book)) + 
