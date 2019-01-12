@@ -10,9 +10,10 @@
 #' \code{book} and \code{language}.
 #' @examples 
 #' 
-#' hca_fairytales()
+#' tales <- hca_fairytales()
 #' 
-#' table(hca_fairytales()$book)
+#' # See first few rows
+#' head(tales)
 #' 
 #' @export
 hca_fairytales <- function() {
