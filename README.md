@@ -10,7 +10,7 @@ status](https://ci.appveyor.com/api/projects/status/github/EmilHvitfeldt/hcander
 [![CRAN
 status](https://www.r-pkg.org/badges/version/hcandersenr)](https://cran.r-project.org/package=hcandersenr)
 [![CRAN\_Download\_Badge](http://cranlogs.r-pkg.org/badges/hcandersenr)](https://CRAN.R-project.org/package=hcandersenr)
-
+[![DOI](https://zenodo.org/badge/98581517.svg)](https://zenodo.org/badge/latestdoi/98581517)
 <!-- badges: end -->
 
 ## An R Package for H.C. Andersens fairy tales

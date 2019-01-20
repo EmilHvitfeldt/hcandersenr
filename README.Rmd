@@ -18,7 +18,7 @@ knitr::opts_chunk$set(
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/EmilHvitfeldt/hcandersenr?branch=master&svg=true)](https://ci.appveyor.com/project/EmilHvitfeldt/hcandersenr)
 [![CRAN status](https://www.r-pkg.org/badges/version/hcandersenr)](https://cran.r-project.org/package=hcandersenr)
 [![CRAN_Download_Badge](http://cranlogs.r-pkg.org/badges/hcandersenr)](https://CRAN.R-project.org/package=hcandersenr)
-
+[![DOI](https://zenodo.org/badge/98581517.svg)](https://zenodo.org/badge/latestdoi/98581517)
 <!-- badges: end -->
 
 ## An R Package for H.C. Andersens fairy tales
