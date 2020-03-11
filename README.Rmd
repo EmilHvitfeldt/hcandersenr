@@ -14,10 +14,11 @@ knitr::opts_chunk$set(
 ```
 
 <!-- badges: start -->
-[![Travis build status](https://travis-ci.org/EmilHvitfeldt/hcandersenr.svg?branch=master)](https://travis-ci.org/EmilHvitfeldt/hcandersenr)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/EmilHvitfeldt/hcandersenr?branch=master&svg=true)](https://ci.appveyor.com/project/EmilHvitfeldt/hcandersenr)
+[![R build status](https://github.com/EmilHvitfeldt/hcandersenr/workflows/R-CMD-check/badge.svg)](https://github.com/EmilHvitfeldt/hcandersenr/actions)
+[![Codecov test coverage](https://codecov.io/gh/EmilHvitfeldt/hcandersenr/branch/master/graph/badge.svg)](https://codecov.io/gh/EmilHvitfeldt/hcandersenr?branch=master)
 [![CRAN status](https://www.r-pkg.org/badges/version/hcandersenr)](https://cran.r-project.org/package=hcandersenr)
-[![CRAN_Download_Badge](http://cranlogs.r-pkg.org/badges/hcandersenr)](https://CRAN.R-project.org/package=hcandersenr)
+[![Downloads](http://cranlogs.r-pkg.org/badges/hcandersenr)](https://CRAN.R-project.org/package=hcandersenr)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 [![DOI](https://zenodo.org/badge/98581517.svg)](https://zenodo.org/badge/latestdoi/98581517)
 <!-- badges: end -->
 

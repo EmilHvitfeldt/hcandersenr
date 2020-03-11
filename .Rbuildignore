@@ -17,3 +17,5 @@ indexing_new.csv
 ^LICENSE\.md$
 hcandersenr.Rproj
 ^data-raw$
+^codecov\.yml$
+^\.github$

@@ -3,7 +3,6 @@
 \docType{package}
 \name{hcandersenr}
 \alias{hcandersenr}
-\alias{hcandersenr-package}
 \title{Fairy tales and stories of H.C. Andersen.}
 \description{
 This package contains the (mostly) complete text of 157 fairy tales of
